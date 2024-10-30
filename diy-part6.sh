@@ -101,10 +101,10 @@ sed -i '2a ifconfig rai0 up\nifconfig ra0 up\nbrctl addif br-lan rai0\nbrctl add
 ## 其他补丁
 
 # 测试编译时间
-YUOS_DATE="$(date +%Y.%m.%d)(新春贺岁版)"
-BUILD_STRING=${BUILD_STRING:-$YUOS_DATE}
-echo "Write build date in openwrt : $BUILD_DATE"
-echo -e '\n小渔学长 Build @ '${BUILD_STRING}'\n'  >> package/base-files/files/etc/banner
-sed -i '/DISTRIB_REVISION/d' package/base-files/files/etc/openwrt_release
-echo "DISTRIB_REVISION=''" >> package/base-files/files/etc/openwrt_release
-sed -i '/DISTRIB_DESCRIPTION/d' package/base-files/files/etc/openwrt_release
+#YUOS_DATE="$(date +%Y.%m.%d)(新春贺岁版)"
+#BUILD_STRING=${BUILD_STRING:-$YUOS_DATE}
+#echo "Write build date in openwrt : $BUILD_DATE"
+#echo -e '\n小渔学长 Build @ '${BUILD_STRING}'\n'  >> package/base-files/files/etc/banner
+#sed -i '/DISTRIB_REVISION/d' package/base-files/files/etc/openwrt_release
+#echo "DISTRIB_REVISION=''" >> package/base-files/files/etc/openwrt_release
+#sed -i '/DISTRIB_DESCRIPTION/d' package/base-files/files/etc/openwrt_release
